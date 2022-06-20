@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started
 
 Esse projeto é o backend do Sistema da Biblioteca, feito em PHP Laravel
 
