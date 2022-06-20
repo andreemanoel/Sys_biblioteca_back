@@ -15,4 +15,12 @@ class UsuarioEmprestimo extends Model
         'data_devolucao',
         'status',
     ];
+
+    public function usuario() {
+        return $this->hasOne(Usuario::class, 'id','usuario_id');
+    }
+
+    public function livro() {
+        return $this->hasOne(Livro::class, 'id','livro_id');
+    }
 }

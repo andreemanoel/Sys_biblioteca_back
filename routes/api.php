@@ -30,4 +30,9 @@ Route::delete('livro/{id}', '\App\Http\Controllers\LivroController@delete');
 Route::get('livro', '\App\Http\Controllers\LivroController@get');
 Route::get('livro/{id}', '\App\Http\Controllers\LivroController@getLivro');
 
+Route::post('emprestimo', '\App\Http\Controllers\EmprestimoController@store');
+Route::put('emprestimo/{id}', '\App\Http\Controllers\EmprestimoController@update');
+Route::get('emprestimo', '\App\Http\Controllers\EmprestimoController@get');
+Route::get('emprestimo/{id}', '\App\Http\Controllers\EmprestimoController@getUsuarioEmprestimo');
+
 Route::get('genero', '\App\Http\Controllers\GeneroController@get');
